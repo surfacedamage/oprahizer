@@ -1,3 +1,3 @@
 Oprahize::Application.routes.draw do
-  match 'oprah/:say' => 'animations#index'
+  match '/:say' => 'animations#index'
 end
