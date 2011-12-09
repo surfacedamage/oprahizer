@@ -12,9 +12,9 @@ class Animation
     @text = text
   end
 
-  def self.create(text)
+  def self.load_or_create(text)
     image = self.new(text)
-    image.animate
+    image.animate unless image.exists?
     image
   end
 
@@ -36,6 +36,10 @@ class Animation
 
   def file_path
     "public/images/#{file_name}"
+  end
+
+  def exists?
+    File.exists?(file_path)
   end
 
   private
