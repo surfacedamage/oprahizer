@@ -1,4 +1,5 @@
 /.bundle
 /log/*.log
 /tmp
-/images/*
+/db/*.sqlite3
+/public/images/*
