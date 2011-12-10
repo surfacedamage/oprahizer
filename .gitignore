@@ -4,3 +4,4 @@
 /db/*.sqlite3
 /public/images/*
 .sass-cache/
+/public/generated/*
