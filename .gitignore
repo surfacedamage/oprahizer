@@ -5,3 +5,5 @@
 /public/images/*
 .sass-cache/
 /public/generated/*
+.DS_Store
+gitkeep
