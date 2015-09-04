@@ -1,7 +1,57 @@
-/*
- * This is a manifest file that'll automatically include all the stylesheets available in this directory
- * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
- * the top of the compiled file, but it's generally better to create a new file per style scope.
- *= require_self
- *= require_tree .
-*/
+body {
+  font-family: Helvetica, "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  text-align: left;
+}
+
+form p {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  position: absolute;
+  top: 6px;
+  left: 30px;
+  font-size: 16px;
+  color: #999;
+}
+
+#oprah_carrier {
+  background: url('watchman.jpg') no-repeat;
+  height: 905px;
+  width: 370px;
+  position: relative;
+}
+
+#oprahized {
+  position: absolute;
+  top: 70px;
+  left: 35px;
+}
+
+#oprah_carrier form {
+  display: block;
+  position: absolute;
+  top: 325px;
+  left: 85px;
+}
+
+#oprah_carrier input[type=text] {
+  margin: 0;
+  padding: 3px;
+  border: 1px solid #999;
+  width: 200px;
+  font-size: 16px;
+}
+
+#oprah_carrier input[type=submit] {
+  display: none;
+}
