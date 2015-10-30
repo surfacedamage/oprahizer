@@ -14,7 +14,7 @@ class AnimationsController < ApplicationController
   private
 
   def animation_url(image)
-    "#{root_url}images/#{image.file_name}"
+    "#{root_url}images/#{CGI.escape(image.file_name)}"
   end
   helper_method :animation_url
 
