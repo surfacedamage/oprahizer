@@ -1,8 +1,8 @@
 class AnimationsController < ApplicationController
 
   def index
-    saying = params[:say] || "You win a Kleenex!"
-    @title = params[:say] || "Building Your Meme Self-Esteem"
+    saying = say || "You win a Kleenex!"
+    @title = say || "Building Your Meme Self-Esteem"
     @animation = Animation.load_or_create(saying)
 
     respond_to do |format|
@@ -17,5 +17,9 @@ class AnimationsController < ApplicationController
     "#{root_url}images/#{CGI.escape(image.file_name)}"
   end
   helper_method :animation_url
+
+  def say
+    CGI.unescape(params[:say])
+  end
 
 end
