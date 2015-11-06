@@ -1,5 +1,7 @@
 class AnimationsController < ApplicationController
 
+  skip_before_filter :verify_authenticity_token
+
   def index
     say = params[:say] || params[:text]
     say = CGI.unescape(say) if say
