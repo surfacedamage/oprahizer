@@ -27,6 +27,7 @@ class AnimationsController < ApplicationController
     {
       response_type: 'in_channel',
       attachments: [
+        fallback: image_url,
         image_url: image_url
       ]
     }
